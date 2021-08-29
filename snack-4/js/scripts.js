@@ -1,12 +1,8 @@
-// Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una
-// lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
-var nomi = ["Andrea", "Francesco", "Mario", "Pierpaolo", "Gianfranco", "Luca", "Michele"];
-var cognomi = ["Fiorentino", "Rossi", "Rizzo", "De Lorenzis", "Capasa", "Biondi", "Neri"];
-var invitati =  [];
-for(var i = 0; i <= 3; i++){
-    var indiceNomi = Math.floor(Math.random() * nomi.length);
-    var indiceCognomi = Math.floor(Math.random() * cognomi.length);
-    var nomeCompleto = nomi[indiceNomi] + " " + cognomi[indiceCognomi];
-    invitati.push(nomeCompleto);
-}   
-console.log(invitati);
+// Crea un array di numeri interi
+// e fai la somma di tutti gli elementi che sono in posizione (indice dell'array) dispari
+var numeri = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+var somma = 0;
+for (var i=0; i <= numeri.length; i= i+2) {
+    somma = somma + numeri[i];
+}
+console.log("Il risultato della somma dei numeri in posizione dispari dell'array è ", somma);
